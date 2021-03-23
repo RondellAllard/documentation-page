@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: none;
+  margin: none;
+}
+
+/* Mobile first */
+/* General styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Navbar */
+#navbar {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+#navbar li {
+  font-size: 1.2rem;
+  border-top: 1px black solid;
+  list-style-type: none;
+}
+
+#main-doc header {
+  margin-top: 3em;
+}
+
+@media screen and (min-width: 800px) {
+  #navbar {
+    position: fixed;
+    height: 100vh;
+    width: 333px;
+    border-right: 3px solid #e1e1e1;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  #navbar header {
+    padding-bottom: 1em;
+  }
+  #navbar li {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  #main-doc {
+    margin-left: 350px;
+  }
+}
